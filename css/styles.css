@@ -5,6 +5,7 @@
   --secondary-color: #ffffff;
   --color: #000000;
   --third-color: rgba(255, 255, 255, 0.6);
+  --icon-color:#AFB1B8;
 }
 
 /* Body*/
@@ -121,11 +122,18 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 344px;
+  margin-left: 318px;
   padding: 32px 0;
 }
 
 /*Mail*/
+.icon-envelope{
+  fill: var(--primary-text-color);
+  cursor: pointer;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 .mail {
   font-weight: 500;
   line-height: 1.14;
@@ -135,17 +143,27 @@ body {
 }
 
 .mail:hover,
+.mail:hover .icon-envelope,
 .mail:focus,
+.mail:focus  .icon-envelope,
 .tel:hover,
-.tel:focus {
+.tel:hover .icon-smartphone,
+.tel:focus .icon-smartphone,
+.tel:focus{
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /*Telephone number*/
-.tel-list {
-  margin-left: 50px;
+.icon-smartphone{
+  fill: var(--primary-text-color);
+  cursor: pointer;
+  margin-right: 10px;
+  vertical-align: middle;
 }
+
 .tel {
+  margin-left: 30px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -158,8 +176,21 @@ body {
 .head {
   padding-top: 0;
   padding-bottom: 0;
-  background: #2f303a;
+  background: #c4c4c4;
   margin: 0;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/backgroung-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .head-container {
@@ -229,6 +260,17 @@ body {
   flex-basis: calc((100% - 90px) / 4);
 }
 
+.icons{
+  margin-bottom: 30px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  padding: 25px 100px;
+}
+
+.icon-antenna-background{
+  fill: #2196F3;
+}
+
 .atention-to-detail,
 .punctuality,
 .planning,
@@ -286,7 +328,7 @@ body {
   background: #f5f4fa;
 }
 
-.title-our-team {
+.title-our-team, .title-our-client {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -312,8 +354,9 @@ body {
 }
 .our-team-date {
   margin: 0;
-  padding: 30px 0;
+  padding: 30px 0 16px 0;
 }
+
 .title-ihor-demyanenko,
 .title-olga-repina,
 .title-mykola-tarasov,
@@ -338,6 +381,10 @@ body {
   padding-top: 10px;
 }
 
+.social-network{
+justify-content: center;
+}
+
 .olga-repina,
 .mykola-tarasov,
 .mykhailo-yermakov {
@@ -347,7 +394,57 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.title-our-client{
+  margin-bottom: 50px;
+}
+
+.regular-customers{
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.button-icon-yaco,
+.button-icon-company-tagline-here,
+.button-icon-company,
+.button-icon-foster-peters,
+.button-icon-brand,
+.button-icon-company-tag-line{
+  padding: 0;
+  padding: 15px 31px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon-yaco,
+.icon-company-tagline-here,
+.icon-company,
+.icon-foster-peters,
+.icon-brand,
+.icon-company-tag-line{
+  fill: var(--icon-color);
+}
+
+.button-icon-yaco:hover,
+.button-icon-yaco:hover .icon-yaco,
+.button-icon-company-tagline-here:hover,
+.button-icon-company-tagline-here:hover .icon-company-tagline-here,
+.button-icon-company:hover,
+.button-icon-company:hover .icon-company,
+.button-icon-foster-peters:hover,
+.button-icon-foster-peters:hover .icon-foster-peters,
+.button-icon-brand:hover,
+.button-icon-brand:hover .icon-brand,
+.button-icon-company-tag-line:hover,
+.button-icon-company-tag-line:hover .icon-company-tag-line{
+  border-color: #2196F3;
+  fill: #2196F3;
+}
+
 /*Footer*/
+
 .basement-studio {
   background: #2f303a;
   padding-top: 60px;
@@ -418,7 +515,12 @@ body {
 .button-web-site:hover,
 .button-applications:hover,
 .button-design:hover,
-.button-marketing:hover {
+.button-marketing:hover,
+.button-all:focus,
+.button-web-site:focus,
+.button-applications:focus,
+.button-design:focus,
+.button-marketing:focus {
   cursor: pointer;
   color: var(--secondary-color);
   background: #2196f3;
@@ -483,6 +585,19 @@ body {
   flex-basis: calc((100% / 3) - 60px);
 }
 
+.addentum:hover,
+.new-orlean-golden-star-poster:hover,
+.seafood-restaurant:hover,
+.project-prime:hover,
+.project-boxes:hover,
+.inspiration-has-no-borders:hover,
+.limited-edition:hover,
+.project-lab:hover,
+.growing-business:hover { 
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-list div {
   border: 1px solid #eeeeee;
   border-top: none;
@@ -491,6 +606,7 @@ body {
 .project-date {
   padding: 20px 24px;
 }
+
 .title-addentum,
 .title-new-orlean-golden-star-poster,
 .title-seafood-restaurant,

@@ -32,13 +32,17 @@
           </ul>
         </nav>
         <ul class="list-type-none-two">
-          <li>
+          <li class="navigation">
             <a href="mailto:info@devstudio.com" class="mail"
-              >info@devstudio.com</a
-            >
+              ><svg width="16" height="12" class="icon-envelope">
+                <use href="./img/icons.svg#icon-envelope-hover-1"></use>
+              </svg>info@devstudio.com</a
+            >           
           </li>
-          <li class="tel-list"> 
-            <a href="tel:+380961111111" class="tel">+38 096 111 11 11</a>
+          <li class="tel-hover navigation">
+            <a href="tel:+380961111111" class="tel"><svg width="10" height="16" class="icon-smartphone">
+              <use href="./img/icons.svg#icon-smartphone-1"></use>
+            </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -166,26 +170,62 @@
 
     <!--Footer-->
     <footer class="basement-studio">
-      <div class="container footer">
-        <a href="./index.html" class="basement-logo"
-          ><span class="basement-logo-web">Web</span
-          ><span class="basement-logo-studio">Studio</span></a
-        >
-        <address>
-          <p class="basement-street">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul class="basement-contact">
+      <div class="container navigation">
+        <div>
+          <a href="./index.html" class="basement-logo"
+            ><span class="basement-logo-web">Web</span
+            ><span class="basement-logo-studio">Studio</span></a
+          >
+          <address>
+            <p class="basement-street">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="basement-contact">
+              <li>
+                <a href="mailto:info@devstudio.com" class="basement-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="basement-tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div>
+          <h3 class="join-in">приєднуйтесь</h3>
+          <ul class="list-social-network">
             <li>
-              <a href="mailto:info@devstudio.com" class="basement-mail"
-                >info@devstudio.com</a
-              >
+              <a href="" class="link-icon-instagram">
+                <svg width="20" height="20" class="icon-instagram">
+                  <use href="./img/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="tel:+380961111111" class="basement-tel"
-                >+38 096 111 11 11</a
-              >
+              <a href="" class="link-icon-twitter">
+                <svg width="20" height="20" class="icon-twitter">
+                  <use href="./img/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-icon-facebook">
+                <svg width="20" height="20" class="icon-facebook">
+                  <use href="./img/icons.svg#iicon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="link-icon-linkedin">
+                <svg width="20" height="20" class="icon-linkedin">
+                  <use href="./img/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
-  </body>
+  </footer>
+</body>
 </html>
