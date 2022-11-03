@@ -391,17 +391,12 @@ body {
   cursor: pointer;
 }
 
-.list-link:hover{
-  padding: 12px;
-  background: #2196F3;
-  border-radius: 50%;
-}
-
 .list-link:hover .icon-instagram,
 .list-link:hover .icon-twitter,
 .list-link:hover .icon-facebook,
 .list-link:hover .icon-linkedin{
   fill: var(--secondary-color);
+  background: #2196F3;
 }
 
 .icon-instagram,
@@ -560,14 +555,22 @@ body {
 .footer-icon:hover .icon-instagram,
 .footer-icon:hover .icon-twitter,
 .footer-icon:hover .icon-facebook,
-.footer-icon:hover .icon-linkedin{
+.footer-icon:hover .icon-linkedin,
+.footer-icon:focus .icon-instagram,
+.footer-icon:focus .icon-twitter,
+.footer-icon:focus .icon-facebook,
+.footer-icon:focus .icon-linkedin{
   fill: var(--secondary-color);
 }
 
 .footer-icon:hover,
 .footer-icon:hover,
 .footer-icon:hover,
-.footer-icon:hover{
+.footer-icon:hover,
+.footer-icon:focus,
+.footer-icon:focus,
+.footer-icon:focus,
+.footer-icon:focus{
   background-color: var(--accent-color);
 }
 /*Page Portfolio*/
