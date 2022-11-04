@@ -380,12 +380,14 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 30px 0;
-  cursor: pointer;
 }
 
-.list-link{
+.link-icon{
+  display: flex;
   padding: 12px;
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-instagram,
@@ -395,12 +397,19 @@ body {
   fill: var(--icon-color);
 }
 
-.list-link:hover .icon-instagram,
-.list-link:hover .icon-twitter,
-.list-link:hover .icon-facebook,
-.list-link:hover .icon-linkedin,
-.list-link:hover{
+.link-icon:hover .icon-instagram,
+.link-icon:hover .icon-twitter,
+.link-icon:hover .icon-facebook,
+.link-icon:hover .icon-linkedin,
+.link-icon:focus .icon-instagram,
+.link-icon:focus .icon-twitter,
+.link-icon:focus .icon-facebook,
+.link-icon:focus .icon-linkedin{
   fill: var(--secondary-color);
+}
+
+.link-icon:hover,
+.link-icon:focus{
   background-color: #2196F3;
 }
 
@@ -429,7 +438,7 @@ body {
 .button-icon-foster-peters,
 .button-icon-brand,
 .button-icon-company-tag-line{
-  padding: 0;
+  display: block;
   padding: 15px 31px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -547,33 +556,32 @@ body {
   display: flex;
   list-style-type: none;
   gap: 10px;
+  margin-top: 20px;
 }
 
-.footer-icon{
+.link-icon-social-network{
   padding: 12px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  margin-top: 20px;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-icon:hover .icon-instagram,
-.footer-icon:hover .icon-twitter,
-.footer-icon:hover .icon-facebook,
-.footer-icon:hover .icon-linkedin,
-.footer-icon:hover,
-.footer-icon:hover,
-.footer-icon:hover,
-.footer-icon:hover{
+.link-icon-social-network:hover .icon-instagram,
+.link-icon-social-network:hover .icon-twitter,
+.link-icon-social-network:hover .icon-facebook,
+.link-icon-social-network:hover .icon-linkedin,
+.link-icon-social-network:focus .icon-instagram,
+.link-icon-social-network:focus .icon-twitter,
+.link-icon-social-network:focus .icon-facebook,
+.link-icon-social-network:focus .icon-linkedin{
+  fill: var(--secondary-color);
+}
+
+.link-icon-social-network:hover,
+.link-icon-social-network:focus{
   background-color: var(--accent-color);
-  fill: var(--secondary-color);
-}
-
-.footer-icon .link-icon-instagram:focus .icon-instagram,
-.footer-icon .link-icon-twitter:focus .icon-twitter,
-.footer-icon .link-icon-facebook:focus .icon-facebook,
-.footer-icon .link-icon-linkedin:focus .icon-linkedin{
-  fill: var(--secondary-color);
 }
 
 /*Page Portfolio*/
