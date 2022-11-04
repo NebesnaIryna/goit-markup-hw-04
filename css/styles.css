@@ -128,7 +128,7 @@ body {
 
 /*Mail*/
 .icon-envelope{
-  fill: var(--primary-text-color);
+  fill: currentColor;
   cursor: pointer;
   margin-right: 10px;
   vertical-align: middle;
@@ -156,7 +156,7 @@ body {
 
 /*Telephone number*/
 .icon-smartphone{
-  fill: var(--primary-text-color);
+  fill: currentColor;
   cursor: pointer;
   margin-right: 10px;
   vertical-align: middle;
@@ -265,10 +265,6 @@ body {
   background: #F5F4FA;
   border-radius: 4px;
   padding: 25px 100px;
-}
-
-.icon-antenna-background{
-  fill: #2196F3;
 }
 
 .atention-to-detail,
@@ -386,17 +382,14 @@ body {
   list-style-type: none;
   padding: 0;
   justify-content: center;
-  gap: 39px;
+  gap: 10px;
   padding: 30px 0;
   cursor: pointer;
 }
 
-.list-link:hover .icon-instagram,
-.list-link:hover .icon-twitter,
-.list-link:hover .icon-facebook,
-.list-link:hover .icon-linkedin{
-  fill: var(--secondary-color);
-  background: #2196F3;
+.list-link{
+  padding: 12px;
+  border-radius: 50%;
 }
 
 .icon-instagram,
@@ -406,10 +399,21 @@ body {
   fill: var(--icon-color);
 }
 
-
-.icon-instagram:hover{
+.list-link:hover .icon-instagram,
+.list-link:hover .icon-twitter,
+.list-link:hover .icon-facebook,
+.list-link:hover .icon-linkedin,
+.list-link:hover{
   fill: var(--secondary-color);
+  background-color: #2196F3;
 }
+
+/* .list-link .link-icon-instagram:focus .icon-instagram,
+.list-link .link-icon-twitter:focus .icon-twitter,
+.list-link .link-icon-facebook:focus .icon-facebook,
+.list-link .link-icon-linkedin:focus .icon-linkedin{
+  fill: var(--secondary-color);
+} */
 
 .olga-repina,
 .mykola-tarasov,
@@ -464,7 +468,19 @@ body {
 .button-icon-brand:hover,
 .button-icon-brand:hover .icon-brand,
 .button-icon-company-tag-line:hover,
-.button-icon-company-tag-line:hover .icon-company-tag-line{
+.button-icon-company-tag-line:hover .icon-company-tag-line,
+.button-icon-yaco:focus,
+.button-icon-yaco:focus .icon-yaco,
+.button-icon-company-tagline-here:focus,
+.button-icon-company-tagline-here:focus .icon-company-tagline-here,
+.button-icon-company:focus,
+.button-icon-company:focus .icon-company,
+.button-icon-foster-peters:focus,
+.button-icon-foster-peters:focus .icon-foster-peters,
+.button-icon-brand:focus,
+.button-icon-brand:focus .icon-brand,
+.button-icon-company-tag-line:focus,
+.button-icon-company-tag-line:focus .icon-company-tag-line{
   border-color: #2196F3;
   fill: #2196F3;
 }
@@ -556,23 +572,21 @@ body {
 .footer-icon:hover .icon-twitter,
 .footer-icon:hover .icon-facebook,
 .footer-icon:hover .icon-linkedin,
-.footer-icon:focus .icon-instagram,
-.footer-icon:focus .icon-twitter,
-.footer-icon:focus .icon-facebook,
-.footer-icon:focus .icon-linkedin{
+.footer-icon:hover,
+.footer-icon:hover,
+.footer-icon:hover,
+.footer-icon:hover{
+  background-color: var(--accent-color);
   fill: var(--secondary-color);
 }
 
-.footer-icon:hover,
-.footer-icon:hover,
-.footer-icon:hover,
-.footer-icon:hover,
-.footer-icon:focus,
-.footer-icon:focus,
-.footer-icon:focus,
-.footer-icon:focus{
-  background-color: var(--accent-color);
+.footer-icon .link-icon-instagram:focus .icon-instagram,
+.footer-icon .link-icon-twitter:focus .icon-twitter,
+.footer-icon .link-icon-facebook:focus .icon-facebook,
+.footer-icon .link-icon-linkedin:focus .icon-linkedin{
+  fill: var(--secondary-color);
 }
+
 /*Page Portfolio*/
 .filters {
   margin-bottom: 50px;
@@ -715,3 +729,11 @@ body {
   margin: 0;
   padding-top: 4px;
 }
+
+
+
+
+
+
+
+
